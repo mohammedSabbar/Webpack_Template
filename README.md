@@ -31,7 +31,7 @@ This is full template for developing your code using Typescript and SASS.
 
 ## 🔬 Installation
 
-Make a project clone into your mechiene using Git CLI
+Make a project clone into your machine using Git CLI
 ```JS
 git clone https://github.com/AhmedBHameed/Webpack_Template.git
 ```
