@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AhmedBHameed/ImageManager.git"
+    "url": "git+https://github.com/AhmedBHameed/Webpack_Template.git"
   },
   "author": "AhmedBHameed",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AhmedBHameed/ImageManager.git/issues"
+    "url": "https://github.com/AhmedBHameed/Webpack_Template.git/issues"
   },
-  "homepage": "https://github.com/AhmedBHameed/ImageManager.git#readme",
+  "homepage": "https://github.com/AhmedBHameed/Webpack_Template.git#readme",
   "devDependencies": {
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
