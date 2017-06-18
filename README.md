@@ -26,6 +26,8 @@ This is full template for developing your code using Typescript and SASS.
 4. Easy and simple line of code using npm will manage the whole project.
 5. You can make your own configure as you intend to.
 6. This template has all the nessecary dependencies so you dont have to worry about repuckaging.
+7. The project will be under watch mode.
+8. Abilitiy to test the project using localhost:9000 server.
 
 ## 🔬 Installation
 
@@ -38,6 +40,7 @@ Then install the package using node package manager
 npm install
 ```
 Your main application is app.ts so import any modules,classes,sass,css files inside it.
+Modify your index.ejs which is the main template. Any extra library try to attach them inside your app.ts then the package will bundle and attach them all as a final product.
 It is located under src folder.
 dist is the final project after compiling.
 
