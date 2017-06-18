@@ -1,3 +1,3 @@
-#Webpack_Template
+# Webpack_Template
 
-###This is full template for developing your code using Typescript and SASS.
+### This is full template for developing your code using Typescript and SASS.
