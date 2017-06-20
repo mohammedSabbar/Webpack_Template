@@ -3,19 +3,24 @@ This is full template for developing your code using Typescript and SASS.
 
 ## Version of the packages:
 ```JS
-"css-loader": "^0.28.4",
-"extract-text-webpack-plugin": "^2.1.2",
-"html-webpack-plugin": "^2.28.0",
-"node-sass": "^4.5.3",
-"sass-loader": "^6.0.6",
-"style-loader": "^0.18.2",
-"ts-loader": "^2.1.0",
-"typescript": "^2.3.4",
-"webpack": "^2.6.1",
-"webpack-dev-server": "^2.4.5"
+"devDependencies": {
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "html-webpack-plugin": "^2.28.0",
+    "node-sass": "^4.5.3",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "ts-loader": "^2.1.0",
+    "typescript": "^2.3.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
 ```
 
 ## New Features
+- V(1.1) Make enhancement by adding npm-run-all package to run multiple tasks at a time.
 - V(1.0) First initialize.
 
 ## Why we need Webpack
@@ -44,21 +49,34 @@ Modify your index.ejs which is the main template. Any extra library try to attac
 It is located under src folder.
 dist is the final project after compiling.
 
+### Scripts that you can use with node package manager (npm):
+For the moment you you have those scripts only
+```JS
+ "scripts": {
+		"serve": "webpack-dev-server",
+		"mini": "npm-run-all clean minifiy",
+	  	"build": "npm-run-all clean rebuild"
+  },
+```
 * For testing the project using localhost:9000 server use
 ```JS
-npm run serve
+npm run serve 	// you can change localhost port by changing port number in webpack.config.js line 18
 ```
 
-* For building the project using as final product use
+* For building the project and keep tracking using watch mode use
 ```JS
-npm run build
+npm run build		// script will run in watch mode that will detect any changes in your project
 ```
 
-Note: running any task will make the project in watch mode which that means any changes will be directly detected. 
+* For build and minify your product as final product use
+```JS
+npm run mini	// generate minified files of the project
+```
+
+Note: running any task will make the project in watch mode which that means any changes will be directly detected.
 Enjoy...
 
 ### Built With
-
 * [Webpack](https://webpack.js.org/).
 
 ### License

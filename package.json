@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
 	  	"clean": "rimraf ./dist/*",
-	 	"minified":"webpack -p --progress",
+	 	"minifiy":"webpack -p --progress",
 	  	"rebuild": "webpack -d --progress --watch",
 		"serve": "webpack-dev-server",
-		"mini": "npm-run-all clean minified",
+		"mini": "npm-run-all clean minifiy",
 	  	"build": "npm-run-all clean rebuild"
   },
   "repository": {
