@@ -20,6 +20,7 @@ This is full template for developing your code using Typescript and SASS.
 ```
 
 ## New Features
+- V(1.2) Make enhancement by reconfigure weppack.config.js which detect if you use development mode or product mode.
 - V(1.1) Make enhancement by adding npm-run-all package to run multiple tasks at a time.
 - V(1.0) First initialize.
 
@@ -33,6 +34,7 @@ This is full template for developing your code using Typescript and SASS.
 6. This template has all the nessecary dependencies so you dont have to worry about repuckaging.
 7. The project will be under watch mode.
 8. Abilitiy to test the project using localhost:9000 server.
+9. Sbmitt all project changes without refreshing your page.
 
 ## 🔬 Installation
 
@@ -45,7 +47,7 @@ Then install the package using node package manager
 npm install
 ```
 Your main application is app.ts so import any modules,classes,sass,css files inside it.
-Modify your index.ejs which is the main template. Any extra library try to attach them inside your app.ts then the package will bundle and attach them all as a final product.
+Modify your index.html which is the main template. Any extra library try to attach them inside your app.ts then the package will bundle and attach them all as a final product.
 It is located under src folder.
 dist is the final project after compiling.
 
@@ -73,7 +75,8 @@ npm run build		// script will run in watch mode that will detect any changes in 
 npm run mini	// generate minified files of the project
 ```
 
-Note: running any task will make the project in watch mode which that means any changes will be directly detected.
+Note1: Running any task will make the project in watch mode which that means any changes will be directly detected.
+Note2: Both "npm run mini" and "npm run build" uses product mode "npm run serve" use development mode.
 Enjoy...
 
 ### Built With

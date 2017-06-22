@@ -7,6 +7,14 @@ const extractSass = new ExtractTextPlugin({
     filename: "[name].[contenthash].css",
     disable: process.env.NODE_ENV === "development"
 });
+const extractHtml = new htmlWebpackPlugin({
+	title: 'Image Manager',
+	minify:{
+		collapseWhitespace: true
+	},
+	hash: true,
+	template: './src/index.html' // Load a custom template (ejs by default see the FAQ for details)
+});
 
 module.exports={
     devServer: {
@@ -33,10 +41,10 @@ module.exports={
             use: extractSass.extract({
                 use:
                     [{
-                        loader: "css-loader" // translates CSS into CommonJS
+                        loader: "css-loader", // translates SASS into Common CSS
+                        options: {sourceMap: true }
                     }, {
-                        loader: "sass-loader",
-                        options: { sourceMap: true }
+                        loader: "sass-loader"
                     }],
                 fallback: "style-loader"
                 })
@@ -46,14 +54,5 @@ module.exports={
             exclude: /node_modules/,
         }]
     },
-    plugins: [new htmlWebpackPlugin({
-        title: 'Image Manager',
-        minify:{
-            collapseWhitespace: true
-        },
-        hash: true,
-        template: './src/index.ejs' // Load a custom template (ejs by default see the FAQ for details)
-    }),
-    extractSass
-  ]
+    plugins: [ extractHtml, extractSass ]
 }
