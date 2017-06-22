@@ -4,6 +4,7 @@ This is full template for developing your code using Typescript and SASS.
 ## Version of the packages:
 ```JS
 "devDependencies": {
+    "cross-env": "^5.0.1",
     "css-loader": "^0.28.4",
     "extract-text-webpack-plugin": "^2.1.2",
     "html-webpack-plugin": "^2.28.0",
