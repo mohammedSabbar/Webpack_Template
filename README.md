@@ -77,7 +77,9 @@ npm run mini	// generate minified files of the project
 ```
 
 Note1: Running any task will make the project in watch mode which that means any changes will be directly detected.
+
 Note2: Both "npm run mini" and "npm run build" uses product mode "npm run serve" use development mode.
+
 Enjoy...
 
 ### Built With
